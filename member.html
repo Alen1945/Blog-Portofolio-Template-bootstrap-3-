@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jlife | The Way to Get Income</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="img/logoo.png" rel="shortcut icon">
+  </head>
+  <body style="padding-top: 70px;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-jlife">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-jlife-collapse" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class="img-responsive img-logo-jlife"><img src="img/nav-icon.png"></span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-jlife-collapse">
+            <form action="searh.php" method="get" role="search" class="nav navbar-form navbar-right form-jlife-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Cari....">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" title="search"></span></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-user text-btn-top2" title="My Acount"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-home text-btn-top2" title="HOME"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-globe text-btn-top2" title="pemberitahuan"></span><span class="badge badge-jlife2">2</span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-out text-btn-top2" title="log out"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- awal isi -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Register to Become a Member</h2>
+            <form class="form-horizontal" action="register.php" method="get">
+              <div class="form-card">
+                <h2>Biodata Member</h2>
+                <div class="form-group">
+                  <label for="nama_lengkap" class="col-sm-3 control-label">Nama Lengkap</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nama_lengkap" placeholder="Nama Lengkap">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Jenis Kelamin</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="gender" id="male" value="male" checked>Pria
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="gender" id="female" value="female">Wanita
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="tempat_lahir" class="col-sm-3 control-label">Tempat Lahir</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="bulan/tanggal/tahun" class="col-sm-3 control-label">Bln/Tnggl/Thn Lahir</label>
+                  <div class="col-sm-9">
+                    <input type="date" class="form-control" id="bulan/tanggal/tahun" min="1970-01-01" max="2017-07-16">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Agama</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="islam" value="islam" checked>Islam
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="katolik" value="katolik">Katolik
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="protestan" value="protestan">Protestan
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="budha" value="budha">Budha
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="hindu" value="hindu">Hindu
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="agama" id="lainnya" value="lainnya">Lain-nya
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="nik" class="col-sm-3 control-label">NIK</label>
+                  <div class="col-sm-9">
+                    <input type="number" class="form-control" id="nik" placeholder="NIK" title="Nomor Induk Kependudukan">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="no_hp" class="col-sm-3 control-label">No. HandPhone</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="no_hp" placeholder="No. HandPhone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="no_rekening_bri" class="col-sm-3 control-label">No.Rekening BRI</label>
+                  <div class="col-sm-9">
+                    <input type="number" class="form-control" id="no_rekening_bri" placeholder="No.Rekening BRI">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="alamat" class="col-sm-3 control-label">Alamat</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" id="alamat" placeholder="Alamat" cols="100%" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Pendidikan Terakhir</label>
+                  <div class="col-sm-9">
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="sd" value="sd">SD
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="sltp" value="sltp">SLTP
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="slta" value="slta">SLTA
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="s1" value="s1">S1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="s2" value="s2">S2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="s3" value="s3">S3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="pendidikan" id="lainnya" value="lainnya" checked>Lain-nya
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Pekerjaan</label>
+                  <div class="col-sm-9">
+                    <select>
+                      <option>-- Pekerjaan --</option>
+                      <option value="pns">PNS</option>
+                      <option value="tni/plori">TNI/Polri</option>
+                      <option value="peg.swasta">Peg.Swasta</option>
+                      <option value="wiraswasta">Wiraswasta</option>
+                      <option value="mahasiswa">Mahasiswa</option>
+                      <option value="siswa">Siswa</option>
+                      <option value="lain-nya">Lain-nya</option>
+                    </select>
+                  </div>
+                </div> 
+              </div>
+              <div class="form-card">
+                <h2>Acount Member</h2>
+                <div class="form-group">
+                  <label for="nama_pengguna" class="col-sm-3 control-label">Nama Pengguna</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nama_pengguna" placeholder="Nama Pengguna">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-sm-3 control-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-sm-3 control-label">Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="confirm_password" class="col-sm-3 control-label">Confirm Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="confirm_password" placeholder="Masukan Kembali Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="id_upline" class="col-sm-3 control-label">ID UPLINE</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="id_upline" placeholder="ID Upline">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="captcha" class="col-sm-3 control-label">Captcha</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="captcha" placeholder="Captcha">
+                  </div>
+                  <div class="col-sm-3">
+                    
+                  </div>
+                </div> 
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> setuju dengan segala aturan sebagai member
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!-- akhir isi -->
+
+    <!-- ini footer -->
+    <div class="footer">
+    <div class="container">
+      <div class="row footer-div">
+        <div class="col-md-4">
+          <h4 class="title-footer">NewsLetter</h4>
+          <p>SignUp to Our NewsLetter</p>
+          <form class="form-newsletter">
+            <div class="input-group">
+              <input type="text" class="form-control form-bottom" placeholder="Type your Email Here">
+              <span class="input-group-btn">
+              <button class="btn btn-default btn-search-bottom" type="button">
+                <strong>GO</strong>
+              </button>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h4 class="title-footer">more info</h4>
+          <ul class="list-unstyled list-contact">
+            <li><a href="#">Cara Mendaftar</a></li>
+            <li><a href="#">Cara Deposit</a></li>
+            <li><a href="#">Cara Transaksi</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h4 class="title-footer">Author</h4>
+          <p class="author"><a href="#">Jlife</a></p>
+          <p>Hidup dan Bekerja Bersama</p>
+        </div>
+      </div>
+      <div class="row footer-copyright">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2017 by Jlife</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
